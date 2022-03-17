@@ -3,13 +3,11 @@
 
 #evaluador de edad, dependiendo de la edad, decir si eres joven o no
 
-from typing import Type
-
-
 def evaluaredad(edad):
     
     if edad <= 0:
-        raise TypeError("ingrese valor mayor a cero")
+        raise ZeroDivisionError("ingrese valor mayor a cero "+str(edad))
+        #raise TypeError("ingrese valor mayor a cero "+str(edad))
     elif edad <16:
         return 'menor de edad'
     elif edad <28:
@@ -23,6 +21,6 @@ def evaluaredad(edad):
     
         
         
-print(evaluaredad(0))
+print(evaluaredad(-6))
 print('proc culminado')
         
