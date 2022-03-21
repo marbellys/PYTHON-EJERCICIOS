@@ -28,5 +28,6 @@ print(miEmpleado.estado())
 
 print ("..........a continuacion creamos un segundo objeto.......")
 
-    
-    
+empleado2 = empleado()
+print('el nombre del empleado es:',miEmpleado.nombre + ' ' + miEmpleado.apellido)   
+print(empleado2.estado())
